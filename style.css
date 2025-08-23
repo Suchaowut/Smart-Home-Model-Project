@@ -5,6 +5,7 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin: 0; /* ลบ margin เริ่มต้นของ body */
     }
     h2 {
         font-weight: bold;
@@ -12,6 +13,8 @@
     }
     .container {
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
     .blocky {
         background-color: #fff;
@@ -163,6 +166,7 @@
         border-radius: 20px 20px 0 0;
         box-shadow: 0 -3px 12px rgba(0,0,0,0.2);
         text-align: center;
+        margin-top: auto; /* ดัน footer ลงล่าง */
     }
     .team-container {
         display: flex;
