@@ -1,11 +1,11 @@
 <style>
     body {
-        background: #f4f6f9;
-        font-family: 'Segoe UI', sans-serif;
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
         margin: 0; /* ลบ margin เริ่มต้น */
+        padding: 1rem; /* แทน p-4 */
+        background: #f4f6f9;
     }
     h2 {
         font-weight: bold;
@@ -13,6 +13,8 @@
     }
     .container {
         flex: 1 0 auto; /* ขยายเต็มพื้นที่ที่เหลือ */
+        display: flex;
+        flex-direction: column;
     }
     .blocky {
         background-color: #fff;
@@ -158,13 +160,13 @@
         margin-top: 5px;
     }
     footer {
+        flex-shrink: 0; /* ป้องกัน footer ถูกย่อ */
         background: #1f2937;
         color: #fff;
         padding: 20px;
         border-radius: 20px 20px 0 0;
         box-shadow: 0 -3px 12px rgba(0,0,0,0.2);
         text-align: center;
-        margin-top: auto;
     }
     .team-container {
         display: flex;
